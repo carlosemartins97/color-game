@@ -1,0 +1,21 @@
+body {
+    background-color: #232323;
+}
+
+.quadrado {
+    width: 30%;
+    background-color: purple;
+    padding-bottom: 30%;
+    float: left;
+    margin: 1.66%;
+}
+
+#container {
+    max-width: 40em;
+    margin: 0 auto;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+}
