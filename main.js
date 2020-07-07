@@ -45,6 +45,7 @@ resetButton.addEventListener("click", function(){
     cores = escolherCorAleatoria(numCores);
     corCerta = pegarCor();
     corDisplay.textContent = corCerta;
+    msg.textContent = "";
     resetButton.textContent = "Novas cores";
     for(var i = 0; i < quadrados.length; i++){
         quadrados[i].style.backgroundColor = cores[i];
