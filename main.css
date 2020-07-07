@@ -1,5 +1,8 @@
 body {
     background-color: #232323;
+    margin: 0;
+    font-family: "Arial";
+
 }
 
 .quadrado {
@@ -8,16 +11,53 @@ body {
     padding-bottom: 30%;
     float: left;
     margin: 1.66%;
+    border-radius: 50%;
+    transition: background 0.7s;
+    --webkit-transition:background 0.7s;
+    -moz-transition: background 0.7s;
 }
 
 #container {
     max-width: 40em;
-    margin: 0 auto;
+    margin: 2em auto;
 }
 
 h1 {
     color: white;
+    line-height: 1.3;
     text-align: center;
+    background-color: #019e3d;
+    margin: 0;
+    text-transform: uppercase;
+    padding: 20px 0;
+}
+
+button {
+    border: none;
+    background: none;
+    text-transform: uppercase;
+    height: 100%;
+    font-weight: 1000;
+    color: #019e3d;
+    letter-spacing: 1px;
+    font-size: inherit;
+    transition: all 0.3s;
+    --webkit-transition:all 0.3s;
+    -moz-transition: all 0.3s;
+}
+
+button:hover {
+    color: #fff;
+    background: #019e3d;
+}
+
+#corDisplay {
+    font-size: 2em;
+}
+
+#msg {
+    display: inline-block;
+    width: 10%;
 }
 
 
@@ -29,5 +69,6 @@ h1 {
 }
 
 .selected {
-    background-color: blue;
+    background-color: #019e3d;
+    color: white;
 }

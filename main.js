@@ -22,6 +22,7 @@ easyButton.addEventListener("click", function(){
             quadrados[i].style.backgroundColor = cores[i];
         } else {
             quadrados[i].style.display = "none";
+            h1.style.backgroundColor = "#019e3d";
         }
     }
 });
@@ -36,6 +37,7 @@ hardButton.addEventListener("click", function(){
     for(var i = 0; i < quadrados.length; i++){
         quadrados[i].style.backgroundColor = cores[i];
         quadrados[i].style.display = "block";
+        h1.style.backgroundColor = "#019e3d";
     }
 });
 
@@ -46,7 +48,7 @@ resetButton.addEventListener("click", function(){
     resetButton.textContent = "Novas cores";
     for(var i = 0; i < quadrados.length; i++){
         quadrados[i].style.backgroundColor = cores[i];
-        h1.style.backgroundColor = "#232323";
+        h1.style.backgroundColor = "#019e3d";
     }
 });
 
