@@ -4,6 +4,16 @@ var corCerta = pegarCor();
 var corDisplay = document.getElementById("corDisplay");
 var msg = document.querySelector("#msg");
 var h1 = document.querySelector("h1");
+var resetButton = document.querySelector("#reset");
+
+resetButton.addEventListener("click", function(){
+    cores = escolherCorAleatoria(6);
+    corCerta = pegarCor();
+    corDisplay.textContent = corCerta;
+    for(var i = 0; i < quadrados.length; i++){
+        quadrados[i].style.backgroundColor = cores[i];
+    }
+});
 
 corDisplay.textContent = corCerta;
 
@@ -12,8 +22,9 @@ for(var i = 0; i < quadrados.length; i++){
 
     quadrados[i].addEventListener("click", function(){
         var corClicada = this.style.backgroundColor;
+        console.log(corClicada, corCerta);
         if(corClicada === corCerta){
-            msg.textContent = "Correto!"
+            msg.textContent = "Play again?"
             mudarCores(corCerta);
             h1.style.backgroundColor = corCerta;
         } else {

@@ -20,6 +20,10 @@ h1 {
     text-align: center;
 }
 
-#msg {
-    color: #fff;
+
+#stripe {
+    background: white;
+    height: 2em;
+    text-align: center;
+    color: black;
 }
